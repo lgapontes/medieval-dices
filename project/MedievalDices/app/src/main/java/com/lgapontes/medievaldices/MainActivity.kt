@@ -83,6 +83,10 @@ class MainActivity : AppCompatActivity() {
             index++
         }
 
-        editTextResult.setText("Result: $total\n$result")
+        if (amount > 1) {
+            editTextResult.setText(amount.toString() + "x d$dice dices was rolled\nResult: $total\n$result")
+        } else {
+            editTextResult.setText("One d$dice dice was rolled\nResult: $total")
+        }
     }
 }

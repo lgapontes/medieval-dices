@@ -12,7 +12,9 @@
         android:adjustViewBounds="true"
         android:paddingTop="12dp"
         android:src="@drawable/title"
-        android:id="@+id/imageview_title" />
+        android:id="@+id/imageview_title"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
 
     <TableLayout
         android:layout_width="match_parent"
